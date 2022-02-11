@@ -1,0 +1,25 @@
+﻿@model ExchangeRates.ViewModels.GifyDates
+
+@{
+    ViewData["Title"] = "Home Page";
+
+}
+
+
+<div class="text-center">
+
+
+
+
+    <form asp-action="Gify" asp-controller="Home">
+            <label>Первая Дата </label>
+            <input type="text" asp-for="FistDate" /><br />
+            <label>Вторая Дата</label>
+            <input type="text" asp-for="SecondDate" />
+            <br />
+            <input type="submit" value="Проверить" />
+
+        </form>
+
+
+</div>
